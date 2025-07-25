@@ -3,8 +3,8 @@ CREATE DATABASE db_pizzaria_legal;
 USE db_pizzaria_legal;
 
 CREATE TABLE tb_categorias (
-	id bigint AUTO_INCREMENT PRIMARY KEY,
-     tipoPizza varchar(255) NOT NULL,
+	id BIGINT AUTO_INCREMENT PRIMARY KEY,
+     tipoPizza VARCHAR(255) NOT NULL,
      classePizza VARCHAR(255) NOT NULL
 );
 
@@ -17,8 +17,8 @@ values ("salgada", "tradicional");
 SELECT * FROM tb_categorias;
 
 CREATE TABLE tb_pizzas (
-	id bigint AUTO_INCREMENT PRIMARY KEY,
-	nome varchar(255) NOT NULL,
+	id BIGINT AUTO_INCREMENT PRIMARY KEY,
+	nome VARCHAR(255) NOT NULL,
 	tamanho VARCHAR(255) NOT NULL,
     preco DECIMAL(5,2),
     tipoID bigint,

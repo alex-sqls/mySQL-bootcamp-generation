@@ -3,7 +3,7 @@ CREATE DATABASE db_generation_game_online;
 USE db_generation_game_online;
 
 CREATE TABLE tb_classe(
-	id bigint AUTO_INCREMENT PRIMARY KEY,
+	id BIGINT AUTO_INCREMENT PRIMARY KEY,
     tipoclasse VARCHAR(255) NOT NULL
 );
 
